@@ -44,6 +44,84 @@ class MyWidgetCard extends StatelessWidget {
                   letterSpacing: 1.6,
                 ),
               ),
+              Container(
+                color: Colors.blueGrey[50],
+                padding: const EdgeInsets.all(10.0),
+                margin: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.mail_outline_rounded,
+                      color: Colors.indigo[900],
+                    ),
+                    const SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'kasrasparrow@gmail.com',
+                      style: TextStyle(
+                        color: Colors.indigo[900],
+                        fontSize: 18.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.blueGrey[50],
+                padding: const EdgeInsets.all(10.0),
+                margin: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.phone,
+                      color: Colors.indigo[900],
+                    ),
+                    const SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '+989195586906',
+                      style: TextStyle(
+                        color: Colors.indigo[900],
+                        fontSize: 18.0,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.blueGrey[50],
+                padding: const EdgeInsets.all(10.0),
+                margin: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.web,
+                      color: Colors.indigo[900],
+                    ),
+                    const SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'www.kasra10design.com',
+                      style: TextStyle(
+                        color: Colors.indigo[900],
+                        fontSize: 18.0,
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
