@@ -11,26 +11,21 @@ class MyWidgetCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Color.fromRGBO(
-          6,
-          48,
-          93,
-          1,
-        ),
+        backgroundColor: Colors.indigo[900],
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.white,
                 backgroundImage: AssetImage(
                   'lib/images/KasraK10.png',
                 ),
               ),
-              Text(
+              const Text(
                 'Kasra Hosseini-K10',
                 style: TextStyle(
                   fontSize: 30.0,
@@ -43,9 +38,10 @@ class MyWidgetCard extends StatelessWidget {
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
                   fontSize: 15.0,
-                  color: Colors.white,
+                  color: Colors.indigo.shade100,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'SourceCodePro',
+                  letterSpacing: 1.6,
                 ),
               ),
             ],
