@@ -31,19 +31,21 @@ class MyWidgetCard extends StatelessWidget {
                 ),
               ),
               Text(
-                'Kasra Hosseini',
+                'Kasra Hosseini-K10',
                 style: TextStyle(
-                  fontSize: 40.0,
+                  fontSize: 30.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'PlayWrite_IS',
                 ),
               ),
               Text(
-                'K10',
+                'FLUTTER DEVELOPER',
                 style: TextStyle(
-                  fontSize: 40.0,
+                  fontSize: 15.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
+                  fontFamily: 'SourceCodePro',
                 ),
               ),
             ],
