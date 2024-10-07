@@ -11,71 +11,39 @@ class MyWidgetCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SafeArea(
-        child: Scaffold(
-          backgroundColor: Colors.teal,
-          body: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      home: Scaffold(
+        backgroundColor: Color.fromRGBO(
+          6,
+          48,
+          93,
+          1,
+        ),
+        body: SafeArea(
+          child: Column(
             children: <Widget>[
-              Container(
-                width: 100.0,
-                height: double.infinity,
-                color: Colors.red,
-                child: const Center(
-                  child: Text(
-                    'C1',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
+              CircleAvatar(
+                radius: 50.0,
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage(
+                  'lib/images/KasraK10.png',
                 ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.yellow,
-                    child: const Center(
-                      child: Text(
-                        'C2',
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    width: 100.0,
-                    height: 100.0,
-                    color: Colors.yellow.withOpacity(
-                      0.4,
-                    ),
-                    child: const Center(
-                      child: Text(
-                        'C3',
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+              Text(
+                'Kasra Hosseini',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-              Container(
-                width: 100.0,
-                height: double.infinity,
-                color: Colors.blue,
-                child: const Center(
-                  child: Text(
-                    'C4',
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
+              Text(
+                'K10',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ],
